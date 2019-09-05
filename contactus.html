@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="zone green sticky">
+        <ul class="main-nav">
+            <li class="nav-head"><a href="index.html">Aspire Services</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">About</a></li>
+            <li class="push"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contactForm">
+        <form id="contactForm">
+            <label for="fname">First Name</label>
+            <input type="text" id="name" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="email">Contact Number</label>
+            <input type="text" id="contact" name="email" placeholder="Your contact number..">
+
+            <label for="department">Select Department</label>
+            <select id="department" name="deparment">
+                <option value="sales">Sales</option>
+                <option value="hr">HR</option>
+                <option value="service">Service</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <footer class="zone yellow">Zero to Mastery</footer>
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_yOO2BR8soag13KZtjN1zV");
+        })();
+    </script>
+    <script src="main.js"></script>
+    
+
+
+</body>
+
+</html>
